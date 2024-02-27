@@ -1,40 +1,19 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const cookieParser = require('cookie-parser');
-const { v4: uuidv4 } = require('uuid');
-
-const {
-	getSingleMenuPosition,
-	getAllMenuItems,
-	addMenuPosition,
-} = require('./controllers/menu');
+const routes = require('./routes');
 
 const port = 3002;
 const app = express();
 
-app.get('/Menu', getAllMenuItems);
+app.use(express.json());
+app.use(cookieParser());
 
-app.get('/Menu/:id', async (req, res) => {
-	const menu = await getSingleMenuPosition(req.params.id);
-
-	res.send({ data: menu });
-});
-
-app.post('/Menu/:uniqueId', async (req, res) => {
-	const uniqueId = uuidv4();
-	const newMenuPosition = await addMenuPosition({
-		id: uniqueId,
-		title: req.body.title,
-		content: req.body.content,
-		imageURL: req.body.imageURL,
-	});
-
-	res.send({ data: newMenuPosition });
-});
+app.use('/', routes);
 
 mongoose
 	.connect(
-		'mongodb+srv://gvanteev85:8ifKa9HZRhP2Zkgi@cluster0.qsl8lkr.mongodb.net/Testing?retryWrites=true&w=majority',
+		'mongodb+srv://gvanteev85:8ifKa9HZRhP2Zkgi@cluster0.qsl8lkr.mongodb.net/PikeTest?retryWrites=true&w=majority',
 	)
 	.then(() => {
 		app.listen(port, () => {

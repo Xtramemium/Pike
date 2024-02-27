@@ -1,5 +1,5 @@
-const Menu = require('../models/Menu');
-const mapPost = require('../helpers/mapPost');
+const Menu = require('../models/MenuModel');
+const mapMenu = require('../helpers/mapMenu');
 
 const addMenuPosition = (menuPos) => {
 	return Menu.create(menuPos);
@@ -14,15 +14,11 @@ const editMenuPosition = async (id, menuItem) => {
 };
 
 const getAllMenuItems = async (req, res) => {
-	Menu.find()
-		.then((menuItems) => {
-			const mappedItems = menuItems.map(mapPost);
-			res.json(mappedItems);
-		})
-		.catch((err) => {
-			console.error(err);
-			res.status(500).send('Ошибка при получении элементов меню');
-		});
+	const menu = await Menu.find();
+
+	const updatedMenu = menu.map(mapMenu);
+
+	return updatedMenu;
 };
 
 const deleteMenuPosition = (id) => {
@@ -30,8 +26,7 @@ const deleteMenuPosition = (id) => {
 };
 
 const getSingleMenuPosition = async (id) => {
-	const data = await Menu.findById(id);
-	return mapPost(data);
+	return Menu.findById(id);
 };
 
 module.exports = {
