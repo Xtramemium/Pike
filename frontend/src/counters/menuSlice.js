@@ -10,10 +10,10 @@ export const menuSlice = createSlice({
 	name: 'Menu',
 	initialState,
 	reducers: {
-		add: (state) => {},
+		watch: (state) => {},
 	},
 });
 
-export const { add } = menuSlice.actions;
+export const { watch } = menuSlice.actions;
 
 export default menuSlice.reducer;
