@@ -1,4 +1,4 @@
-import { BgVideo, Header } from '../../Components';
+import {BgVideo, Header} from "../../components";
 
 export const MainPage = () => {
 	return (

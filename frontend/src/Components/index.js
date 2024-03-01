@@ -1,2 +1,2 @@
-export * from './BgVideo/BgVideo';
-export * from './Header/header';
+export * from './bg-video/BgVideo';
+export * from './header/header';

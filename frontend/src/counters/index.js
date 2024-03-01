@@ -1,2 +1,2 @@
-export * from './menuSlice'
-export * from './singleMenuItemSlice'
+export * from './menuSlice';
+export * from './singleMenuItemSlice';
