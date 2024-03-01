@@ -1,1 +1,1 @@
-export * from './main-page/MainPage';
+export * from './main-page/MainPage.jsx'

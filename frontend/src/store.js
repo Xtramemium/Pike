@@ -1,9 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { menuSlice, singleMenuItemSlice } from './counters';
+import {configureStore} from "@reduxjs/toolkit";
+import MenuReducer from './features/menuSlice.js'
+import SingleMenuItemReducer from './features/singleMenuItemSlice.js'
 
 export const store = configureStore({
 	reducer: {
-		menu: menuSlice,
-		singleMenuItem: singleMenuItemSlice,
-	},
-});
+		Menu: MenuReducer,
+		SingleMenuItem: SingleMenuItemReducer
+	}
+})

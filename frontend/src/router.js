@@ -1,10 +1,9 @@
-import { createBrowserRouter } from 'react-router-dom';
-import { MainPage } from './pages';
+import {createBrowserRouter} from "react-router-dom";
 
 export const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <MainPage />,
+		element: <MainPage/>,
 	},
 	{
 		path: '/menu',
@@ -16,6 +15,7 @@ export const router = createBrowserRouter([
 	},
 	{
 		path: '/menu/:id/edit',
+
 		element: <div> Create or edit </div>
 	},
 	{
@@ -26,4 +26,4 @@ export const router = createBrowserRouter([
 		path: '/*',
 		element: <div><h1>Page not found</h1></div>,
 	},
-]);
+])
