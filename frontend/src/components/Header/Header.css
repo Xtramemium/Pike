@@ -1,85 +1,114 @@
-.button-logo {
-	background-color: transparent;
-	border: none;
-	color: white;
+nav ul {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-.header {
+li svg {
+	cursor: pointer;
+	display: block;
+}
+
+nav img {
+	width: 11vh;
+}
+
+nav li {
+	height: 50px;
+}
+
+nav a {
+	font-family: Prata, sans-serif;
+	text-decoration: none;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: white;
+	transition: color 0.3s ease-in-out;
+	padding: 0 30px;
+}
+
+nav a:hover {
+	color: orange;
+}
+
+nav li:first-child {
+	margin-right: auto;
+}
+
+.sidebar {
 	position: fixed;
 	top: 0;
-	left: 0;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 5%;
+	right: 0;
 	z-index: 1000;
-}
-
-nav {
+	height: 100vh;
+	width: 250px;
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.4);
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	justify-content: flex-start;
+	transform: translateX(100%);
+	transition: transform 0.3s ease-out;
 }
 
-.button-logo.open img {
-	opacity: 0;
+.sidebar.open {
+	transform: translateX(0);
 }
 
-@media screen and (max-width: 1440px) {
-	.logo {
-		width: 120px;
-	}
-
-	.toggle-button {
-		font-size: 3.5rem;
-	}
+.sidebar li {
+	width: 100%;
 }
 
-@media screen and (max-width: 1200px) {
-	.logo {
-		width: 100px;
-	}
-
-	.toggle-button {
-		font-size: 3rem;
-	}
+.sidebar li:first-child {
+	display: flex;
+	justify-content: flex-end;
 }
 
-@media screen and (max-width: 1024px) {
-	.logo {
-		width: 80px;
+.sidebar a {
+	width: 100%;
+}
+
+@media (max-width: 2560px) {
+	.sidebar {
+		display: none;
 	}
 
-	.toggle-button {
-		font-size: 2.5rem;
+	li svg {
+		display: none;
 	}
 }
 
-@media screen and (max-width: 768px) {
-	.logo {
-		width: 60px;
+
+@media (max-width: 768px) {
+
+	.sidebar {
+		display: block;
 	}
 
-	.burget-logo {
-		width: 40px;
+	.hideOnMobile {
+		display: none;
+	}
+
+	li svg {
+		display: block;
+	}
+
+	a img {
+		width: 8vh;
+	}
+
+	.sidebar li {
+		font-size: 20px;
 	}
 }
 
-@media screen and (max-width: 480px) {
-	.header {
-		padding: 0 3%;
-		height: 10vh;
-	}
-
-	.logo-container {
+@media (max-width: 425px) {
+	.sidebar {
 		width: 100%;
-		margin: 3vh 0 0 0;
-	}
-
-	.logo-container .logo {
-		width: 60px;
-	}
-	.burger-logo {
-		width: 30px;
 	}
 }
+
