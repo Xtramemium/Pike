@@ -1,0 +1,85 @@
+.button-logo {
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+	z-index: 1000;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+}
+
+.button-logo.open img {
+	opacity: 0;
+}
+
+@media screen and (max-width: 1440px) {
+	.logo {
+		width: 120px;
+	}
+
+	.toggle-button {
+		font-size: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.logo {
+		width: 100px;
+	}
+
+	.toggle-button {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.logo {
+		width: 80px;
+	}
+
+	.toggle-button {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo {
+		width: 60px;
+	}
+
+	.burget-logo {
+		width: 40px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.header {
+		padding: 0 3%;
+		height: 10vh;
+	}
+
+	.logo-container {
+		width: 100%;
+		margin: 3vh 0 0 0;
+	}
+
+	.logo-container .logo {
+		width: 60px;
+	}
+	.burger-logo {
+		width: 30px;
+	}
+}

@@ -1,33 +1,54 @@
-import { useState, useEffect } from 'react';
-import { Contacts } from '../Contacts/Contacts.jsx';
+import { useState } from 'react';
+import Pike_logo from '../../assets/Pike_logo.webp';
+import hambur_logo from '../../assets/hambur_menu.png';
+import close_menu from '../../assets/close_menu.png';
+import { Link } from 'react-router-dom';
+import './Header.css';
 
-const Header = () => {
-	const [isSticky, setIsSticky] = useState(false);
+export const Header = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-	useEffect(() => {
-		const handleScroll = () => {
-			setIsSticky(window.scrollY > 0); // Update state based on scroll position
-		};
-
-		window.addEventListener('scroll', handleScroll);
-
-		return () => {
-			window.removeEventListener('scroll', handleScroll); // Cleanup on unmount
-		};
-	}, []);
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
 
 	return (
-		<header
-			className={'w-full bg-black sm: h-5'}
-		>
-			<ul>
-				<li>Menu PDF</li>
-				<li>Меню</li>
-				<li>Наша команда</li>
-				<Contacts/>
-			</ul>
+		<header className="header">
+			<nav>
+				<div className="image-container">
+					<img
+						src={Pike_logo}
+						className="logo"
+					/>
+				</div>
+				<div
+					display={!isMenuOpen ? 'hidden' : 'block'}
+					className="links-container"
+				>
+					<ul>
+						<Link to={'./menu'}> Menu</Link>
+						<Link to={'./MenuPdf'}> Menu pdf</Link>
+						<Link to={'./Contacts'}> Contacts</Link>
+						<Link to={'./our-team'}> Our team</Link>
+					</ul>
+				</div>
+				<button
+					className="button-logo"
+					onClick={toggleMenu}
+				>
+					{isMenuOpen ? (
+						<img
+							src={hambur_logo}
+							alt="Open menu"
+						/>
+					) : (
+						<img
+							src={close_menu}
+							alt="Closed menu"
+						/>
+					)}
+				</button>
+			</nav>
 		</header>
 	);
 };
-
-export default Header;
