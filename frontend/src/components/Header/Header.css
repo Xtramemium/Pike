@@ -93,6 +93,18 @@ nav li:first-child {
 		display: none;
 	}
 
+	nav a {
+		padding: 0 15px;
+		display: flex;
+		justify-content: center;
+
+	}
+
+	.Pike-pub {
+		font-family: ;
+		font-size: 30px;
+	}
+
 	li svg {
 		display: block;
 	}
@@ -104,11 +116,17 @@ nav li:first-child {
 	.sidebar li {
 		font-size: 20px;
 	}
+
+	.menu-button {
+		padding-right: 10px;
+	}
 }
 
 @media (max-width: 425px) {
 	.sidebar {
 		width: 100%;
 	}
+
+
 }
 
