@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Pike_logo from '../../assets/Pike_logo.webp';
 import { Link } from 'react-router-dom';
 import './Header.css';
 

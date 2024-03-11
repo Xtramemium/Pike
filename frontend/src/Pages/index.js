@@ -1,1 +1,1 @@
-export * from './main-page/MainPage.jsx'
+export * from '../Components/Slider/Slider.jsx';

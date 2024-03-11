@@ -1,5 +1,5 @@
-import { BackgroundVideo, Header } from './components/index.js';
-import { MainPage } from './pages/index.js';
+import { BackgroundVideo, Header } from './Components';
+import { MainPage } from './Pages/MainPage/MainPage';
 export const App = () => {
 	return (
 		<div className="app-container">
