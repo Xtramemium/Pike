@@ -1,100 +1,73 @@
-/* eslint-disable react/no-unescaped-entities */
+import { useState } from 'react';
+import img2 from '../../assets/img2.webp';
+import img3 from '../../assets/img3.webp';
+// import img5 from '../../assets/img5.webp';
+// import img6 from '../../assets/img6.webp';
+// import img7 from '../../assets/img7.webp';
+// import img8 from '../../assets/img8.webp';
+// import img9 from '../../assets/img9.webp';
+// import img10 from '../../assets/img10.webp';
+import img11 from '../../assets/img11.webp';
+import img12 from '../../assets/img12.webp';
+import unknown_img from '../../assets/unknown_img.webp';
 import './Slider.css';
 
 export const Slider = () => {
+	const [currentSlide, setCurrentSlide] = useState(0);
+	const totalSlides = 4;
+
+	const prevSlide = () => {
+		setCurrentSlide((oldCurrentSlide) => {
+			let val = oldCurrentSlide - 1;
+			if (val < 0) val = totalSlides - 1;
+			return val;
+		});
+	};
+
+	const nextSlide = () => {
+		setCurrentSlide((oldCurrentSlide) => (oldCurrentSlide + 1) % totalSlides);
+	};
+
 	return (
-		<div className="wrapper">
-			<div className="container">
-				<input
-					type="radio"
-					name="slide"
-					id="c1"
-					checked
+		<div className="slider">
+			<div
+				className="slider-images"
+				style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+			>
+				<img
+					className="gallery-img"
+					src={img2}
+					alt={unknown_img}
 				/>
-				<label
-					htmlFor="c1"
-					className="card"
-				>
-					<div className="row">
-						<div className="icon">1</div>
-						<div className="description">
-							<h4>Black sheep</h4>
-							<p>
-								Азотный стаут Black Sheep Irish Stout (Блэк Шип Айриш
-								Стаут) обладает сладковатым и сливочным вкусом, с нотами
-								обжаренного солода. Послевкусие с сухой горчинкой.{' '}
-							</p>
-						</div>
-					</div>
-				</label>
-				<input
-					type="radio"
-					name="slide"
-					id="c2"
-					checked
+				<img
+					className="gallery-img"
+					src={img3}
+					alt={unknown_img}
 				/>
-				<label
-					htmlFor="c2"
-					className="card"
-				>
-					<div className="row">
-						<div className="icon">1</div>
-						<div className="description">
-							<h4>Bakalar</h4>
-							<p>
-								Premium Lager — превосходный чешский лагер премиум-класса,
-								сваренный по традиционному рецепту из моравского ячменного
-								солода и жатецкого хмеля.
-							</p>
-						</div>
-					</div>
-				</label>
-				<input
-					type="radio"
-					name="slide"
-					id="c3"
-					checked
+				<img
+					className="gallery-img"
+					src={img11}
+					alt={unknown_img}
 				/>
-				<label
-					htmlFor="c3"
-					className="card"
-				>
-					<div className="row">
-						<div className="icon">3</div>
-						<div className="description">
-							<h4>Zubr gold</h4>
-							<p>
-								Zubr Gold это светлое пиво прозрачно-золотистого цвета,
-								умеренной крепости, с мягким вкусом, превосходно
-								сочетающим в себе горечь хмеля и сладость пивного сусла.
-							</p>
-						</div>
-					</div>
-				</label>
-				<input
-					type="radio"
-					name="slide"
-					id="c4"
-					checked
+				<img
+					className="gallery-img"
+					src={img12}
+					alt={unknown_img}
 				/>
-				<label
-					htmlFor="c4"
-					className="card"
-				>
-					<div className="row">
-						<div className="icon">4</div>
-						<div className="description">
-							<h4>Дальняя дача</h4>
-							<p>
-								"Дальняя Дача" №1 — освежающий сухой игристый сидр,
-								приготовленный из яблок. Яблочный сок первого отжима
-								ферментируется по традиционной технологии с использованием
-								винных дрожжей, без добавления сахара и воды, затем
-								фильтруется и бутилируется.
-							</p>
-						</div>
-					</div>
-				</label>
+				<img
+					className="gallery-img"
+					src={img3}
+					alt={unknown_img}
+				/>
+			</div>
+			<div className="slider__buttons">
+				{' '}
+				<button onClick={prevSlide}>
+					<i className="fa-solid fa-chevron-left"></i>
+				</button>{' '}
+				<button onClick={nextSlide}>
+					<i className="fa-solid fa-chevron-right"></i>
+				</button>
 			</div>
 		</div>
 	);

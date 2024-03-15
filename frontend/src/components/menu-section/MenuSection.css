@@ -1,0 +1,77 @@
+.menu-section {
+	margin-top: 50px;
+	width: 100%;
+	height: 100vh;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.menu-section img {
+	width: 100%;
+	height: 50vh;
+	object-fit: cover;
+}
+
+.introdusing {
+	line-height: 50px;
+}
+
+.introdusing h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 100px;
+	margin-top: -20px;
+}
+
+.introdusing p {
+	font-size: 20px;
+	text-align: center;
+}
+
+button {
+	padding: 10px;
+	font-size: 20px;
+	border: 2px solid white;
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+	transition: color 0.5s ease-in-out;
+}
+
+button:hover {
+	color: orange;
+}
+
+.menu-section a {
+	margin-top: 30px;
+	font-size: 20px;
+	color: white;
+	transition: color 0.5s ease-in-out;
+}
+
+.menu-section a:hover {
+	color: orange;
+}
+
+@media (max-width: 2500px) {
+	.menu-section img {
+		height: 50vh;
+	}
+}
+
+@media (max-width: 414px) {
+	.introdusing h2 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 450px) {
+	.introdusing h2 {
+		font-size: 40px;
+	}
+}
