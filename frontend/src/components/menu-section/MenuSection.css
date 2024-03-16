@@ -1,5 +1,5 @@
 .menu-section {
-	margin-top: 50px;
+	margin-top: 200px;
 	width: 100%;
 	height: 100vh;
 	color: white;
@@ -16,7 +16,11 @@
 }
 
 .introdusing {
-	line-height: 50px;
+	line-height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .introdusing h2 {
@@ -48,9 +52,10 @@ button:hover {
 }
 
 .menu-section a {
-	margin-top: 30px;
 	font-size: 20px;
 	color: white;
+	padding: 10px;
+	background-color: rgba(57, 47, 67, 0.5s);
 	transition: color 0.5s ease-in-out;
 }
 
@@ -64,14 +69,8 @@ button:hover {
 	}
 }
 
-@media (max-width: 414px) {
+@media (max-width: 430px) {
 	.introdusing h2 {
-		font-size: 30px;
-	}
-}
-
-@media (max-width: 450px) {
-	.introdusing h2 {
-		font-size: 40px;
+		font-size: 35px;
 	}
 }

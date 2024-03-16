@@ -49,14 +49,14 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
 	.main-page-heading {
 		margin-top: 20%;
-		font-size: 40px;
+		font-size: 45px;
 	}
 
 	.gallery h2 {
-		font-size: 25px;
+		font-size: 27px;
 		padding-bottom: 30px;
 	}
 }
