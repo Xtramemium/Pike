@@ -22,8 +22,7 @@ export const MenuSection = () => {
 				>
 					Посмотреть все виды пива
 				</Link>
-			</div>
-			<div>
+				{/* <div>
 				<img
 					src={chizborg}
 					alt={unknown_img}
@@ -38,6 +37,7 @@ export const MenuSection = () => {
 				>
 					Посмотреть меню
 				</Link>
+			</div> */}
 			</div>
 		</div>
 	);
