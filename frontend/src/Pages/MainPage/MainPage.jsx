@@ -1,5 +1,12 @@
 import './MainPage.css';
-import { BackgroundVideo, Gallery, MenuSection } from '../../components';
+import {
+	BackgroundVideo,
+	Broadcasts,
+	FindUs,
+	Gallery,
+	MenuSection,
+	SocialMedia,
+} from '../../components';
 
 export const MainPage = () => {
 	return (
@@ -7,6 +14,9 @@ export const MainPage = () => {
 			<BackgroundVideo />
 			<Gallery />
 			<MenuSection />
+			<Broadcasts />
+			<SocialMedia />
+			<FindUs />
 		</div>
 	);
 };

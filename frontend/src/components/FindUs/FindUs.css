@@ -1,0 +1,24 @@
+.FindUs__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.FindUs__container h2 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.FindUs__container p {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.FindUs__container iframe {
+	border: none;
+}
+
+.FindUs__container span {
+	margin-bottom: 50px;
+}

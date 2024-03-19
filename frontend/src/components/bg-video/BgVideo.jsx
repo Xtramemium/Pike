@@ -1,6 +1,6 @@
 import bgVid7 from '../../assets/bgVid7.mp4';
 import { SubHeading } from '../SubHeading/SubHeading';
-import { Header } from '../header/Header';
+import { Header } from '../Header/Header';
 import './BgVideo.css';
 
 export const BackgroundVideo = () => {
