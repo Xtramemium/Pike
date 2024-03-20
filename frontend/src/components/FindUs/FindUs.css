@@ -22,3 +22,27 @@
 .FindUs__container span {
 	margin-bottom: 50px;
 }
+
+@media (max-width: 2500px) {
+	.FindUs__container iframe {
+		width: 75%;
+	}
+}
+
+@media (max-width: 1440px) {
+	.FindUs__container iframe {
+		width: 75%;
+	}
+}
+
+@media (max-width: 768px) {
+	.FindUs__container iframe {
+		width: 75%;
+	}
+}
+
+@media (max-width: 430px) {
+	.FindUs__container iframe {
+		width: 100%;
+	}
+}

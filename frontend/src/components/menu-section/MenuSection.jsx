@@ -8,7 +8,7 @@ export const MenuSection = () => {
 	return (
 		<div className="menu-section">
 			<div className="introdusing">
-				<div>
+				<div className="beer__section">
 					<img
 						src={img1}
 						alt={unknown_img}
@@ -24,7 +24,7 @@ export const MenuSection = () => {
 						Посмотреть все виды пива
 					</Link>{' '}
 				</div>
-				<div>
+				<div className="food__section">
 					<img
 						src={chizborg}
 						alt={unknown_img}

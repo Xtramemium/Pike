@@ -4,6 +4,20 @@
 	box-sizing: border-box;
 }
 
+button {
+	padding: 10px;
+	font-size: 20px;
+	border: 2px solid white;
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+	transition: color 0.5s ease-in-out;
+}
+
+button:hover {
+	color: orange;
+}
+
 body {
 	min-height: 100vh;
 	background-size: cover;

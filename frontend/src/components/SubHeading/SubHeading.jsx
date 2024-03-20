@@ -17,17 +17,15 @@ export const SubHeading = () => {
 					</li>
 				</ul>
 				<div className="tagline">
-					<h3>
-						<p>
-							<span className="hover-text">Бар, </span>
-							<span className="hover-text">где </span>
-							<span className="hover-text">каждый </span>
-							<span className="hover-text">чувсвуствует </span>
-							<span className="hover-text">себя </span>
-							<span className="hover-text">как </span>
-							<span className="hover-text">дома</span>
-						</p>
-					</h3>
+					<p>
+						<span className="hover-text">Бар, </span>
+						<span className="hover-text">где </span>
+						<span className="hover-text">каждый </span>
+						<span className="hover-text">чувсвуствует </span>
+						<span className="hover-text">себя </span>
+						<span className="hover-text">как </span>
+						<span className="hover-text">дома</span>
+					</p>
 				</div>
 			</main>
 		</div>

@@ -1,5 +1,5 @@
 .broadcasts-section {
-	line-height: 30px;
+	line-height: 50px;
 	margin-top: 20%;
 	width: 100%;
 	display: flex;
@@ -7,7 +7,6 @@
 	align-items: center;
 	text-align: center;
 	flex-direction: column;
-	font-size: 30px;
 }
 
 .broadcasts-section img {
@@ -17,4 +16,12 @@
 
 .broadcasts-section a {
 	margin-bottom: 30px;
+}
+
+.broadcasts-section h2 {
+	font-size: 35px;
+}
+
+.broadcasts-section p {
+	font-size: 20px;
 }

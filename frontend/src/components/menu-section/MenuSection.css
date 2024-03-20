@@ -32,22 +32,8 @@
 }
 
 .introdusing p {
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
-}
-
-button {
-	padding: 10px;
-	font-size: 20px;
-	border: 2px solid white;
-	border-radius: 10px;
-	cursor: pointer;
-	color: white;
-	transition: color 0.5s ease-in-out;
-}
-
-button:hover {
-	color: orange;
 }
 
 .menu-section a {
@@ -66,6 +52,30 @@ button:hover {
 @media (max-width: 2500px) {
 	.menu-section img {
 		height: 100vh;
+	}
+}
+
+@media (max-width: 1440px) {
+	.introdusing h2 {
+		font-size: 35px;
+	}
+
+	.menu-section img {
+		height: 50vh;
+	}
+}
+
+@media (max-width: 768px) {
+	.introdusing h2 {
+		font-size: 35px;
+	}
+
+	.beer__section {
+		margin-bottom: 40px;
+	}
+
+	.menu-section img {
+		height: 70vh;
 	}
 }
 
