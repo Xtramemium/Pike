@@ -11,7 +11,7 @@ export const BackgroundVideo = () => {
 					preload="metadata"
 					controls={false}
 					playsInline={true}
-					disablePictureInPicture="true"
+					disablePictureInPicture={true}
 					autoPlay
 					loop
 					muted
