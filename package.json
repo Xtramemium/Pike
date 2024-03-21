@@ -9,6 +9,16 @@
 		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview"
 	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest",
+			"prettier"
+		],
+		"plugins": [
+			"prettier"
+		]
+	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^2.2.1",
 		"eslint-config-prettier": "^9.1.0",
