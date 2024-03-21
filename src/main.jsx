@@ -9,9 +9,8 @@ import '../index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<BrowserRouter>
 		<Provider store={store}>
-			<SpeedInsights>
 				<App />
-			</SpeedInsights>
+			<SpeedInsights/>
 		</Provider>
 	</BrowserRouter>,
 );
