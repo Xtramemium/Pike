@@ -10,6 +10,7 @@ export const FindUs = () => {
 					src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1d56c0faefc782e1568cb8f93ca62fb814a5f2c49173ec4346940683b3b0e2e&amp;source=constructor"
 					width="100%"
 					height="401"
+					loading="lazy"
 				/>
 				<h2>Забронировать столик</h2>
 				<p>

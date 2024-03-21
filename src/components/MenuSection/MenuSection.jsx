@@ -12,6 +12,7 @@ export const MenuSection = () => {
 					<img
 						src={img1}
 						alt={unknown_img}
+						loading="lazy"
 					/>
 					<div>
 						<h2>Пивная карта</h2>
@@ -28,6 +29,7 @@ export const MenuSection = () => {
 					<img
 						src={chizborg}
 						alt={unknown_img}
+						loading="lazy"
 					/>
 					<div>
 						<h2>Основное меню</h2>

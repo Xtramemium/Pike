@@ -1,4 +1,4 @@
-import bgVid7 from '../../assets/bgVid7.mp4';
+import bgVid7 from '../../assets/bgVid7.webm';
 import { SubHeading } from '../SubHeading/SubHeading';
 import { Header } from '../Header/Header';
 import './BgVideo.css';

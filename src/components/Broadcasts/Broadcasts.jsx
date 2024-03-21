@@ -8,6 +8,7 @@ export const Broadcasts = () => {
 				<img
 					src="https://aviator.pub/sites/default/files/sport_tr.jpg"
 					alt={unknown_img}
+					loading="lazy"
 				/>
 				<h2>Спортивные трансляции</h2>
 				<p>
