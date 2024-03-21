@@ -8,6 +8,10 @@ export const BackgroundVideo = () => {
 		<>
 			<div className="background-video">
 				<video
+					preload="metadata"
+					controls={false}
+					playsInline={true}
+					disablePictureInPicture="true"
 					autoPlay
 					loop
 					muted
