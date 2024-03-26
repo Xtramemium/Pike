@@ -1,6 +1,3 @@
-import bgVid7 from '../../assets/bgVid7.webm';
-import bgVid7_lowQ from '../../assets/bgVid7_lowQ.webm';
-import bgVid7_lowQ2 from '../../assets/bgVid7_lowQ2.mp4';
 import bgVid7_mod from '../../assets/bgVid7_mod.mp4';
 import { SubHeading } from '../SubHeading/SubHeading';
 import { Header } from '../Header/Header';
