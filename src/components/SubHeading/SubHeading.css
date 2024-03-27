@@ -5,7 +5,6 @@
 	text-align: center;
 	align-items: center;
 	color: white;
-	margin-top: 150px;
 }
 
 main ul {
@@ -25,7 +24,6 @@ a {
 }
 
 .hover-text {
-	font-size: 20px;
 	color: white;
 	transition: color 0.3s ease-in-out;
 	cursor: pointer;
@@ -36,22 +34,16 @@ a {
 }
 
 @media (max-width: 2560px) {
-	.main-page-heading {
-		font-size: 70px;
+	.content {
+		margin-top: 120px;
 	}
-
-	.tagline h3 {
+	.main-page-heading h1 {
 		font-size: 100px;
 	}
-}
 
-@media (max-width: 1440px) {
-	.main-page-heading {
-		font-size: 70px;
-	}
-
-	.content {
-		margin-top: 50px;
+	.content ul {
+		font-size: 40px;
+		line-height: 170px;
 	}
 
 	.tagline {
@@ -60,6 +52,25 @@ a {
 
 	.tagline span {
 		font-size: 40px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.main-page-heading h1 {
+		font-size: 70px;
+	}
+
+	.content ul {
+		font-size: 30px;
+		line-height: 100px;
+	}
+
+	.tagline {
+		margin-top: 5%;
+	}
+
+	.tagline span {
+		font-size: 30px;
 	}
 }
 
@@ -74,25 +85,68 @@ a {
 }
 
 @media (max-width: 768px) {
-	.main-page-heading {
-		font-size: 70px;
-	}
-
-	.tagline span {
-		font-size: 20px;
+	.main-page-heading h1 {
+		font-size: 55px;
 	}
 
 	.content {
-		margin-top: 100px;
+		margin-top: 50px;
+	}
+
+	.content ul {
+		font-size: 25px;
+		margin-top: 40px;
+	}
+
+	.tagline {
+		margin-top: 5%;
+	}
+
+	.tagline span {
+		font-size: 30px;
+	}
+
+	.hover-text {
+		color: white;
+		transition: color 0.3s ease-in-out;
+		cursor: default;
+	}
+
+	.hover-text:hover {
+		color: white;
 	}
 }
 
 @media (max-width: 430px) {
-	.main-page-heading {
+	.main-page-heading h1 {
 		font-size: 50px;
 	}
 
+	.content ul {
+		font-size: 20px;
+		line-height: 70px;
+	}
+
+	.tagline {
+		margin-top: 5%;
+		padding: 0 10px;
+	}
+
 	.tagline span {
+		font-size: 25px;
+	}
+
+	.tagline {
 		font-size: 22px;
+	}
+
+	.hover-text {
+		color: white;
+		transition: color 0.3s ease-in-out;
+		cursor: default;
+	}
+
+	.hover-text:hover {
+		color: white;
 	}
 }

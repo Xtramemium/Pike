@@ -14,11 +14,6 @@
 }
 
 @media (max-width: 2560px) {
-	.main-page-heading {
-		margin-top: 10%;
-		font-size: 70px;
-	}
-
 	.gallery h2 {
 		font-size: 70px;
 		padding-bottom: 50px;
@@ -26,11 +21,6 @@
 }
 
 @media (max-width: 1440px) {
-	.main-page-heading {
-		margin-top: 10%;
-		font-size: 70px;
-	}
-
 	.gallery h2 {
 		font-size: 50px;
 		padding-bottom: 40px;
@@ -38,11 +28,6 @@
 }
 
 @media (max-width: 768px) {
-	.main-page-heading {
-		margin-top: 10%;
-		font-size: 70px;
-	}
-
 	.gallery h2 {
 		font-size: 40px;
 		padding-bottom: 40px;
@@ -50,11 +35,6 @@
 }
 
 @media (max-width: 430px) {
-	.main-page-heading {
-		margin-top: 20%;
-		font-size: 45px;
-	}
-
 	.gallery h2 {
 		font-size: 35px;
 		padding-bottom: 30px;

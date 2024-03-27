@@ -5,17 +5,19 @@ export const SubHeading = () => {
 	return (
 		<div>
 			<main className="content">
-				<h1 className="main-page-heading">Бар "Щука"</h1>
-				<ul>
-					<li>
-						<a href="https://yandex.ru/maps/-/CDFfiOmB">Г. Люберцы ул 8 марта 18к1</a>
-					</li>
-					<li>
-						<a href="tel:+79175483886">
-							<span> +7 (917) 548-38-86</span>
-						</a>
-					</li>
-				</ul>
+				<div className="main-page-heading">
+					<h1>Бар "Щука"</h1>
+					<ul>
+						<li>
+							<a href="https://yandex.ru/maps/-/CDFfiOmB">Г. Люберцы ул 8 марта 18к1</a>
+						</li>
+						<li>
+							<a href="tel:+79175483886">
+								<span> +7 (917) 548-38-86</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 				<div className="tagline">
 					<p>
 						<span className="hover-text">Бар, </span>

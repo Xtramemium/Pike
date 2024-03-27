@@ -81,8 +81,24 @@ nav li:first-child {
 		display: none;
 	}
 
+	.hideOnMobile {
+		font-size: 23px;
+	}
+
 	li svg {
 		display: none;
+	}
+}
+
+@media (max-width: 1440px) {
+	.hideOnMobile {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.hideOnMobile {
+		font-size: 15px;
 	}
 }
 
@@ -99,10 +115,6 @@ nav li:first-child {
 		padding: 0 15px;
 		display: flex;
 		justify-content: center;
-	}
-
-	.Pike-pub {
-		font-size: 30px;
 	}
 
 	li svg {
