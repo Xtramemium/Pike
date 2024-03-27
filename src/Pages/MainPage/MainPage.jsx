@@ -4,8 +4,8 @@ import {
 	Broadcasts,
 	FindUs,
 	Gallery,
-	MenuSection,
 	SocialMedia,
+	MenusSection,
 } from '../../components';
 
 export const MainPage = () => {
@@ -14,6 +14,7 @@ export const MainPage = () => {
 			<BackgroundVideo />
 			<Gallery />
 			{/* <MenuSection /> */}
+			<MenusSection />
 			<Broadcasts />
 			<SocialMedia />
 			<FindUs />

@@ -7,3 +7,4 @@ export * from './Broadcasts/Broadcasts.jsx';
 export * from './Social-media/Social.jsx';
 export * from './FindUs/FindUs.jsx';
 export * from './Swiper/Slider.jsx';
+export * from './Menus-section/MenusSection.jsx';
