@@ -66,7 +66,7 @@ export const Header = () => {
 					<li className="hideOnMobile">
 						<button
 							onClick={() => {
-								const menuElement = document.querySelector('.beer-section');
+								const menuElement = document.querySelector('.food-section');
 								menuElement.scrollIntoView({
 									behavior: 'smooth',
 								});
