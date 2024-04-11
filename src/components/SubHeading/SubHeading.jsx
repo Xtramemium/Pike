@@ -9,7 +9,12 @@ export const SubHeading = () => {
 					<h1>Бар "Щука"</h1>
 					<ul>
 						<li>
-							<a href="https://yandex.ru/maps/-/CDFfiOmB">Г. Люберцы ул 8 марта 18к1</a>
+							<a
+								href="https://yandex.ru/maps/-/CDFfiOmB"
+								target="_blank"
+							>
+								Г. Люберцы ул 8 марта 18к1
+							</a>
 						</li>
 						<li>
 							<a href="tel:+79175483886">

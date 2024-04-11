@@ -32,6 +32,12 @@
 	}
 }
 
+@media (max-width: 1440px) {
+	.swiper {
+		height: 60vh;
+	}
+}
+
 @media (max-width: 768px) {
 	.swiper {
 		height: 80vh;

@@ -6,7 +6,6 @@
 	align-items: center;
 	text-align: center;
 	color: white;
-	margin-top: 50px;
 }
 
 .gallery h2 {
@@ -24,7 +23,7 @@
 @media (max-width: 1440px) {
 	.gallery h2 {
 		font-size: 50px;
-		padding-bottom: 40px;
+		padding-bottom: 30px;
 	}
 }
 

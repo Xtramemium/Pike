@@ -1,6 +1,6 @@
 .broadcasts-section {
 	line-height: 50px;
-	margin-top: 20%;
+	margin-top: 10%;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -15,10 +15,6 @@
 	object-fit: cover;
 }
 
-.broadcasts-section a {
-	margin-bottom: 30px;
-}
-
 .broadcasts-section h2 {
 	margin-bottom: 5%;
 	font-size: 40px;
@@ -29,4 +25,47 @@
 	font-size: 25px;
 	line-height: 50px;
 	padding: 0 20px;
+}
+
+.broadcasts {
+	width: 100%;
+}
+
+@media (max-width: 2560px) {
+}
+
+@media (max-width: 1440px) {
+	.broadcasts h2 {
+		margin-bottom: 3%;
+		font-size: 40px;
+	}
+
+	.broadcasts p {
+		margin: 3% 0;
+		font-size: 30px;
+	}
+
+	.broadcasts img {
+		height: 60vh;
+		width: 70%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.broadcasts p {
+		font-size: 24px;
+	}
+
+	.broadcasts img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 430px) {
+	.broadcasts.broadcasts-section {
+		margin-top: 10%;
+	}
 }

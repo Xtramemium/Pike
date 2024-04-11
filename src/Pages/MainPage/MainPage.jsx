@@ -13,7 +13,6 @@ export const MainPage = () => {
 		<div className="main-page-wrapper">
 			<BackgroundVideo />
 			<Gallery />
-			{/* <MenuSection /> */}
 			<MenusSection />
 			<Broadcasts />
 			<SocialMedia />

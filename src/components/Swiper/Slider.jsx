@@ -12,17 +12,15 @@ const defaultImgSrc = {
 };
 export const Slider = (props) => {
 	const { images = [] } = props;
-	console.log('props.images', props.images);
 	return (
 		<>
 			<Swiper
 				images={images}
 				modules={[Navigation]}
 				navigation={true}
-				className=""
 			>
 				{images.map((image) => (
-					<SwiperSlide key={image.src + Math.random()}>
+					<SwiperSlide key={image.src + Math.random() * 10 + 100}>
 						<img
 							src={image.src}
 							alt={defaultImgSrc.alt}
@@ -33,20 +31,3 @@ export const Slider = (props) => {
 		</>
 	);
 };
-
-/*const GalleryPropTypes = {
-	img1: PropTypes.string.isRequired,
-	img2: PropTypes.string.isRequired,
-	img3: PropTypes.string.isRequired,
-	img4: PropTypes.string.isRequired,
-	img5: PropTypes.string.isRequired,
-	img6: PropTypes.string.isRequired,
-	unknownImg: PropTypes.string,
-};
-
-const SwiperSliderPropTypes = {
-	galleryImgs: PropTypes.shape(GalleryPropTypes).isRequired,
-};
-
-SwiperSlider.propTypes = SwiperSliderPropTypes;
-*/
