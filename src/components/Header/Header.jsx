@@ -30,7 +30,7 @@ export const Header = () => {
 						<button
 							onClick={() => {
 								toggleMenu();
-								const menuElement = document.querySelector('.beer-section');
+								const menuElement = document.querySelector('.food-section');
 								menuElement.scrollIntoView({
 									behavior: 'smooth',
 								});
