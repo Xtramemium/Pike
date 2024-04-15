@@ -5,6 +5,25 @@
 	text-align: center;
 	align-items: center;
 	color: white;
+	font-family: 'bebas neue', sans-serif;
+	font-weight: bold;
+}
+
+.scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #007bff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.scroll-to-top:hover {
+	background-color: orange;
+	color: white;
 }
 
 main ul {

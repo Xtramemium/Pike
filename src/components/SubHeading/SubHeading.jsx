@@ -1,40 +1,65 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect, useState } from 'react';
 import './SubHeading.css';
 
 export const SubHeading = () => {
+	const address = 'https://yandex.ru/maps/-/CDFfiOmB';
+	const phoneNumber = '+7 (917) 548-38-86';
+	const tagline = 'Бар, где каждый чувствует себя как дома';
+	const streetAdress = 'Г. Люберцы ул 8 18к1';
+	const [showButton, setShowButton] = useState(false);
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 890) {
+				setShowButton(true);
+			} else {
+				setShowButton(false);
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+	const scrollToTop = () => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	};
+
 	return (
-		<div>
-			<main className="content">
+		<div className="content">
+			<main>
 				<div className="main-page-heading">
 					<h1>Бар "Щука"</h1>
 					<ul>
 						<li>
 							<a
-								href="https://yandex.ru/maps/-/CDFfiOmB"
+								href={address}
 								target="_blank"
 							>
-								Г. Люберцы ул 8 марта 18к1
+								{streetAdress}
 							</a>
 						</li>
 						<li>
-							<a href="tel:+79175483886">
-								<span> +7 (917) 548-38-86</span>
-							</a>
+							<a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
 						</li>
 					</ul>
 				</div>
 				<div className="tagline">
-					<p>
-						<span className="hover-text">Бар, </span>
-						<span className="hover-text">где </span>
-						<span className="hover-text">каждый </span>
-						<span className="hover-text">чувсвуствует </span>
-						<span className="hover-text">себя </span>
-						<span className="hover-text">как </span>
-						<span className="hover-text">дома</span>
+					<p className="hover-text">
+						<span>{tagline}</span>
 					</p>
 				</div>
 			</main>
+			{showButton && (
+				<button
+					className="scroll-to-top"
+					onClick={scrollToTop}
+				>
+					<i className="fa-solid fa-arrow-up"></i>
+				</button>
+			)}
 		</div>
 	);
 };

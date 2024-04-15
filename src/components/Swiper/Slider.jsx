@@ -10,24 +10,19 @@ const defaultImgSrc = {
 	src: '',
 	alt: unknown_img,
 };
-export const Slider = (props) => {
-	const { images = [] } = props;
-	return (
-		<>
-			<Swiper
-				images={images}
-				modules={[Navigation]}
-				navigation={true}
-			>
-				{images.map((image) => (
-					<SwiperSlide key={image.src + Math.random() * 10 + 100}>
-						<img
-							src={image.src}
-							alt={defaultImgSrc.alt}
-						/>
-					</SwiperSlide>
-				))}
-			</Swiper>
-		</>
-	);
-};
+export const Slider = ({ images = [] }) => (
+	<Swiper
+		images={images}
+		modules={[Navigation]}
+		navigation={true}
+	>
+		{images.map((image) => (
+			<SwiperSlide key={image.src}>
+				<img
+					src={image.src}
+					alt={image.alt || unknown_img}
+				/>
+			</SwiperSlide>
+		))}
+	</Swiper>
+);
