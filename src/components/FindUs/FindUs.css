@@ -1,8 +1,12 @@
 .FindUs__container {
+	width: 100%;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
 	text-align: center;
+	align-items: center;
+	padding-bottom: 5%;
+	border-radius: 10px;
 }
 
 .FindUs__container h2 {
@@ -24,15 +28,36 @@
 	margin: 3% 0;
 }
 
-@media (max-width: 2500px) {
-	.FindUs__container iframe {
-		width: 75%;
+@media (max-width: 2560px) {
+	.FindUs__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		margin: 10% 0;
+	}
+
+	.FindUs__yandex {
+		height: 500px;
 	}
 }
 
 @media (max-width: 430px) {
-	.FindUs__container iframe {
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.FindUs__container {
+		flex-direction: column;
+		justify-content: center;
 		border-radius: 2%;
-		width: 85%;
+	}
+
+	.FindUs__yandex {
+		gap: 50px 0;
+		width: 75%;
+		height: 500px;
 	}
 }

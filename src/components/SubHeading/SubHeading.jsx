@@ -1,12 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from 'react';
 import './SubHeading.css';
+import { addressLink, phoneNumber, pubName, streetAdress, tagline } from '../../constans';
 
 export const SubHeading = () => {
-	const address = 'https://yandex.ru/maps/-/CDFfiOmB';
-	const phoneNumber = '+7 (917) 548-38-86';
-	const tagline = 'Бар, где каждый чувствует себя как дома';
-	const streetAdress = 'Г. Люберцы ул 8 18к1';
 	const [showButton, setShowButton] = useState(false);
 	useEffect(() => {
 		const handleScroll = () => {
@@ -31,11 +28,11 @@ export const SubHeading = () => {
 		<div className="content">
 			<main>
 				<div className="main-page-heading">
-					<h1>Бар "Щука"</h1>
+					<h1>{pubName}</h1>
 					<ul>
 						<li>
 							<a
-								href={address}
+								href={addressLink}
 								target="_blank"
 							>
 								{streetAdress}

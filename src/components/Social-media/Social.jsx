@@ -1,3 +1,4 @@
+import { phoneNumber } from '../../constans';
 import './Social.css';
 import { Link } from 'react-router-dom';
 
@@ -27,6 +28,13 @@ export const SocialMedia = () => {
 						</Link>
 					</div>
 				</div>
+				<h2>Забронировать столик</h2>
+				<p>
+					{' '}
+					<a href={`tel:${phoneNumber}`}>
+						<span> {phoneNumber}</span>
+					</a>
+				</p>
 			</div>
 			<div className="line" />
 		</div>

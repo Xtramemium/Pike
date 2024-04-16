@@ -68,8 +68,8 @@
 }
 
 @media (max-width: 430px) {
-	.broadcasts.broadcasts-section {
-		margin-top: 10%;
+	.broadcasts-section {
+		margin: 3% 0;
 	}
 
 	.broadcasts img {
