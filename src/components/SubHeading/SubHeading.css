@@ -106,8 +106,8 @@ a {
 
 @media (max-width: 768px) {
 	.scroll-to-top {
-		bottom: 5px;
-		right: 5px;
+		bottom: 25px;
+		right: 6px;
 	}
 
 	.main-page-heading h1 {
