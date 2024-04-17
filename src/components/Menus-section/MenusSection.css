@@ -78,6 +78,10 @@
 }
 
 @media (max-width: 430px) {
+	.menu-section {
+		margin-bottom: 20%;
+	}
+
 	.menu-section p {
 		font-size: 22px;
 	}

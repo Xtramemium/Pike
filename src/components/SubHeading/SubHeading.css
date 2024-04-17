@@ -104,6 +104,11 @@ a {
 }
 
 @media (max-width: 768px) {
+	.scroll-to-top {
+		bottom: 5px;
+		right: 5px;
+	}
+
 	.main-page-heading h1 {
 		font-size: 55px;
 	}
@@ -137,6 +142,10 @@ a {
 }
 
 @media (max-width: 430px) {
+	.scroll-to-top {
+		padding: 7px 16px;
+	}
+
 	.main-page-heading h1 {
 		font-size: 50px;
 	}

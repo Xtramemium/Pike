@@ -6,6 +6,7 @@
 	text-align: center;
 	align-items: center;
 	border-radius: 10px;
+	margin-bottom: 10%;
 }
 
 .FindUs__container h2 {
@@ -27,16 +28,19 @@
 	margin: 3% 0;
 }
 
+.FindUs__yandex {
+	height: 600px;
+}
+
 @media (max-width: 2560px) {
 	.FindUs__container {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
-		margin: 10% 0;
 	}
 
-	.FindUs__yandex {
+	.FindUs__container iframe {
 		height: 500px;
 	}
 }
@@ -57,6 +61,5 @@
 	.FindUs__yandex {
 		margin: 20% 0;
 		width: 75%;
-		height: 500px;
 	}
 }
