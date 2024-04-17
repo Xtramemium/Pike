@@ -6,4 +6,6 @@ export * from './Broadcasts/Broadcasts.jsx';
 export * from './Social-media/Social.jsx';
 export * from './FindUs/FindUs.jsx';
 export * from './Swiper/Slider.jsx';
+export * from './AgeVerification/AgeVerification.jsx';
 export * from './Menus-section/MenusSection.jsx';
+export * from './ErrorPage/ErrorPage.jsx';

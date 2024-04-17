@@ -1,3 +1,4 @@
+import { howToFindUs, rewievsAboutUs, rewievsExtra, streetAdress } from '../../constans';
 import './FindUs.css';
 
 export const FindUs = () => {
@@ -5,8 +6,8 @@ export const FindUs = () => {
 		<footer>
 			<div className="FindUs__container">
 				<div className="FindUs__yandex">
-					<h2>Как нас найти</h2>
-					<p>Г. Люберцы, Улица 8 марта 18к1</p>
+					<h2>{howToFindUs}</h2>
+					<p>{streetAdress}</p>
 					<iframe
 						src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1d56c0faefc782e1568cb8f93ca62fb814a5f2c49173ec4346940683b3b0e2e&amp;source=constructor"
 						width="100%"
@@ -20,8 +21,8 @@ export const FindUs = () => {
 						position: 'relative',
 					}}
 				>
-					<h2>Отзывы о нас</h2>
-					<p>На яндекс картах</p>
+					<h2>{rewievsAboutUs}</h2>
+					<p>{rewievsExtra}</p>
 					<iframe
 						style={{
 							width: '100%',
@@ -53,9 +54,7 @@ export const FindUs = () => {
 							maxHeight: '14px',
 							whiteSpace: 'nowrap',
 						}}
-					>
-						Щука на карте Люберец — Яндекс Карты
-					</a>
+					/>
 				</div>
 			</div>
 		</footer>

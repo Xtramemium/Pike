@@ -1,6 +1,5 @@
 import { phoneNumber } from '../../constans';
 import './Social.css';
-import { Link } from 'react-router-dom';
 
 export const SocialMedia = () => {
 	return (
@@ -10,22 +9,22 @@ export const SocialMedia = () => {
 				<h2> Наши соц.сети</h2>
 				<div className="Social_media_links">
 					<div>
-						<Link
-							to={'https://t.me/PikeBeerBar'}
+						<a
+							href={'https://t.me/PikeBeerBar'}
 							target="_blank"
 						>
 							<i className="fa-brands fa-telegram"></i>
 							Telegram
-						</Link>
+						</a>
 					</div>
 					<div>
-						<Link
-							to={'https://www.instagram.com/pike_beer?igsh=MWRzeXpveTB0Nmk4Zg=='}
+						<a
+							href={'https://www.instagram.com/pike_beer?igsh=MWRzeXpveTB0Nmk4Zg=='}
 							target="_blank"
 						>
 							<i className="fa-brands fa-instagram"></i>
 							Instagram
-						</Link>
+						</a>
 					</div>
 				</div>
 				<h2>Забронировать столик</h2>

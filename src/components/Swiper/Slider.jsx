@@ -6,10 +6,6 @@ import 'swiper/css';
 import './Slider.css';
 import 'swiper/css/navigation';
 
-const defaultImgSrc = {
-	src: '',
-	alt: unknown_img,
-};
 export const Slider = ({ images = [] }) => (
 	<Swiper
 		images={images}

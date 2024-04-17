@@ -5,8 +5,7 @@
 	text-align: center;
 	align-items: center;
 	color: white;
-	font-family: 'bebas neue', sans-serif;
-	font-weight: bold;
+	font-family: 'Playfair Display', serif;
 }
 
 .scroll-to-top {
@@ -34,6 +33,7 @@ main ul {
 }
 
 a {
+	font-family: 'Nunito', sans-serif;
 	text-decoration: none;
 	color: inherit;
 }
@@ -58,6 +58,7 @@ a {
 	}
 	.main-page-heading h1 {
 		font-size: 100px;
+		font-weight: 200;
 	}
 
 	.content ul {

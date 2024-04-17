@@ -1,9 +1,29 @@
-import { MainPage } from './Pages/index.js';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import AgeVerification from './components/AgeVerification/AgeVerification';
+import { MainPage } from './Pages';
+import { ErrorPage } from './components';
 
 export const App = () => {
 	return (
-		<div className="app-container">
-			<MainPage />
-		</div>
+		<BrowserRouter>
+			<Routes>
+				<Route
+					path="/age-verification"
+					element={<AgeVerification />}
+				/>
+				<Route
+					path="/MainPage"
+					element={<MainPage />}
+				/>
+				<Route
+					path="/AgeNotConfirmed"
+					element={<ErrorPage />}
+				/>
+				<Route
+					path="/"
+					element={<Navigate to="/age-verification" />}
+				/>
+			</Routes>
+		</BrowserRouter>
 	);
 };
