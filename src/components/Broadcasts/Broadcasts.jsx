@@ -1,6 +1,5 @@
 import './Broadcasts.css';
-import unknown_img from '../../assets/unknown_img.webp';
-import sport_tr from '../../assets/sport_tr.jpg';
+import { default_image, sport_tr } from '../../assets/assets.js';
 import {
 	sportBroadcasts,
 	sportBroadcastsDescription,
@@ -14,7 +13,7 @@ export const Broadcasts = () => {
 				<h2>{sportBroadcasts}</h2>
 				<img
 					src={sport_tr}
-					alt={unknown_img}
+					alt={default_image}
 					loading="lazy"
 				/>
 				<p>

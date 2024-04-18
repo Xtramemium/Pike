@@ -40,7 +40,7 @@ export const Header = () => {
 						</button>
 					</li>
 					<li className="mobileMenu">
-						<a
+						<a onClick={toggleMenu}
 							href="https://drive.google.com/file/d/1fu3OQ2eQgF4Yviy85FLVQOXg0MBqrmJm/view?usp=sharing"
 							target="_blank"
 						>
