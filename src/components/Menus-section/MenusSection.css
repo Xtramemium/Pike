@@ -37,9 +37,13 @@
 	}
 }
 
-@media (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
 	.beer-section {
 		margin-bottom: 5%;
+	}
+
+	.beer-section img {
+		width: 65%;
 	}
 
 	.menu-section {

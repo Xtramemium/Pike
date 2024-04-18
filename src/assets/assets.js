@@ -13,7 +13,8 @@ import guest_image4 from './img11.webp';
 import guest_image5 from './img12.webp';
 import guest_image7 from './img16.jpg';
 import guest_image8 from './img17.jpg';
-import PikeLogo from './PikeLogo.webp';
+// import PikeLogo from './PikeLogo.webp';
+import PikeLogo from './Pike_logo.png';
 
 export {
 	shrimp,
