@@ -96,7 +96,7 @@ nav a {
 	}
 }
 
-@media (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
 	.hideOnMobile {
 		font-size: 20px;
 	}

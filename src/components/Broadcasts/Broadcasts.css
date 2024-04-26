@@ -31,10 +31,8 @@
 	width: 100%;
 }
 
-@media (max-width: 2560px) {
-}
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
 	.broadcasts h2 {
 		margin-bottom: 3%;
 		font-size: 40px;
@@ -47,7 +45,7 @@
 
 	.broadcasts img {
 		height: 60vh;
-		width: 70%;
+		width: 65%;
 	}
 }
 

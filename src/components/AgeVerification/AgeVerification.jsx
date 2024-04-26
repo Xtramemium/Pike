@@ -4,6 +4,7 @@ import { PikeLogo } from '../../assets/assets';
 
 const AgeVerification = () => {
 	const navigate = useNavigate();
+
 	const handleAccept = () => {
 		navigate('/MainPage');
 	};

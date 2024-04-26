@@ -24,6 +24,10 @@
 	padding: 0 10px;
 }
 
+@media  screen and (min-width: 1440px) {
+
+}
+
 @media (max-width: 430px) {
 	.line {
 		margin: 10px 0;

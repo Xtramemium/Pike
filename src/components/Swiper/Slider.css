@@ -32,9 +32,10 @@
 	}
 }
 
-@media (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
 	.swiper {
-		height: 60vh;
+		width: 65%;
+		height: 65vh;
 	}
 }
 

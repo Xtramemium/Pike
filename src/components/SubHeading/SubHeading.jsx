@@ -31,6 +31,7 @@ export const SubHeading = () => {
 					<h1>{pubName}</h1>
 					<ul>
 						<li>
+							<i className="fa-solid fa-location-dot"></i>
 							<a
 								href={addressLink}
 								target="_blank"
@@ -39,6 +40,7 @@ export const SubHeading = () => {
 							</a>
 						</li>
 						<li>
+							<i className="fa-solid fa-phone"></i>
 							<a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
 						</li>
 					</ul>
