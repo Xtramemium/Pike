@@ -9,7 +9,6 @@ import {
 } from '../../components';
 
 export const MainPage = () => {
-	console.log('papa');
 	return (
 		<div className="main-page-wrapper">
 			<BackgroundVideo />

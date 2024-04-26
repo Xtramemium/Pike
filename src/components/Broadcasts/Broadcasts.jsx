@@ -15,7 +15,6 @@ export const Broadcasts = () => {
 				<img
 					src={sport_tr}
 					alt={unknown_img}
-					loading="lazy"
 				/>
 				<p>
 					{sportBroadcastsDescription} <br /> {sportBroadcastsDescription2}

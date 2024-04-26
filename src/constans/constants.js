@@ -5,7 +5,7 @@ export const streetAdress = 'Г. Люберцы ул. 8 марта 18к1';
 export const pubName = 'Бар "Щука"';
 export const beerCard = 'Пивная карта';
 export const beerCardDescription =
-	'Мы собрали для вас лучшие сорта пива со всех уголгов нашей страны';
+	'Мы собрали для вас лучшие сорта пива со всех уголков нашей страны';
 export const beerCardLinkPhrase = 'Посмотреть все виды пива';
 export const menuCard = 'Основное меню';
 export const menuCardDescription =
