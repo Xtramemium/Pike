@@ -1,7 +1,7 @@
 export const addressLink = 'https://yandex.ru/maps/-/CDFfiOmB';
 export const phoneNumber = '+7 (917) 548-38-86';
 export const tagline = 'Бар, где каждый чувствует себя как дома';
-export const streetAdress = 'Г. Люберцы ул. 8 марта 18к1';
+export const streetAddress = 'Г. Люберцы ул. 8 марта 18к1';
 export const pubName = 'Бар "Щука"';
 export const beerCard = 'Пивная карта';
 export const beerCardDescription =
@@ -16,6 +16,6 @@ export const sportBroadcastsDescription =
 	'Это еще один повод собраться большой компанией в "Щуке"';
 export const sportBroadcastsDescription2 = 'и отлично провести время';
 export const howToFindUs = 'Как нас найти';
-export const rewievsAboutUs = 'Отзывы о нас';
-export const rewievsExtra = 'На яндекс картах';
+export const reviewsAboutUs = 'Отзывы о нас';
+export const reviewsExtra = 'На яндекс картах';
 export const atmosphere = 'Атмосфера в нашем баре';

@@ -1,11 +1,10 @@
-import './Broadcasts.css';
-import unknown_img from '../../assets/unknown_img.webp';
-import sport_tr from '../../assets/sport_tr.jpg';
+import './broadcasts.css';
 import {
 	sportBroadcasts,
 	sportBroadcastsDescription,
 	sportBroadcastsDescription2,
 } from '../../constans';
+import { alt_image, sport_tr } from '../../assets/assets.js';
 
 export const Broadcasts = () => {
 	return (
@@ -14,7 +13,7 @@ export const Broadcasts = () => {
 				<h2>{sportBroadcasts}</h2>
 				<img
 					src={sport_tr}
-					alt={unknown_img}
+					alt={alt_image}
 				/>
 				<p>
 					{sportBroadcastsDescription} <br /> {sportBroadcastsDescription2}

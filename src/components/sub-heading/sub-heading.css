@@ -1,0 +1,195 @@
+.content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	color: white;
+	font-family: 'Playfair Display', serif;
+}
+
+.scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #007bff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.scroll-to-top:hover {
+	background-color: orange;
+	color: white;
+}
+
+main ul {
+	list-style: none;
+	color: white;
+	line-height: 80px;
+	font-size: 20px;
+}
+
+a {
+	font-family: 'Nunito', sans-serif;
+	text-decoration: none;
+	color: inherit;
+}
+
+.main-page-heading {
+	font-size: 70px;
+}
+
+.hover-text {
+	color: white;
+	transition: color 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.hover-text:hover {
+	color: orange;
+}
+
+ul i {
+	margin-right: 30px;
+	opacity: 70%;
+
+}
+
+@media (max-width: 2560px) {
+	.content {
+		margin-top: 120px;
+	}
+	.main-page-heading h1 {
+		font-size: 100px;
+		font-weight: 200;
+	}
+
+	.content ul {
+		font-size: 40px;
+		line-height: 170px;
+	}
+
+	.tagline {
+		margin-top: 5%;
+	}
+
+	.tagline span {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.main-page-heading h1 {
+		font-size: 70px;
+	}
+
+	.content ul {
+		font-size: 30px;
+		line-height: 100px;
+	}
+
+	.tagline {
+		margin-top: 5%;
+	}
+
+	.tagline span {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.main-page-heading {
+		font-size: 60px;
+	}
+
+	.tagline span {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.scroll-to-top {
+		bottom: 25px;
+		right: 6px;
+	}
+
+	.main-page-heading h1 {
+		font-size: 55px;
+	}
+
+	.content {
+		margin-top: 50px;
+	}
+
+	.content ul {
+		font-size: 25px;
+		margin-top: 40px;
+	}
+
+	.tagline {
+		margin-top: 5%;
+	}
+
+	.tagline span {
+		font-size: 30px;
+	}
+
+	.hover-text {
+		color: white;
+		transition: color 0.3s ease-in-out;
+		cursor: default;
+	}
+
+	.hover-text:hover {
+		color: white;
+	}
+
+	ul i {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 430px) {
+	.scroll-to-top {
+		padding: 7px 16px;
+	}
+
+	.main-page-heading h1 {
+		font-size: 50px;
+	}
+
+	.content ul {
+		font-size: 20px;
+		line-height: 70px;
+	}
+
+	.tagline {
+		margin-top: 5%;
+		padding: 0 10px;
+	}
+
+	.tagline span {
+		font-size: 25px;
+	}
+
+	.tagline {
+		font-size: 22px;
+	}
+
+	.hover-text {
+		color: white;
+		transition: color 0.3s ease-in-out;
+		cursor: default;
+	}
+
+	.hover-text:hover {
+		color: white;
+	}
+
+	ul i {
+		margin-right: 10px;
+	}
+}
