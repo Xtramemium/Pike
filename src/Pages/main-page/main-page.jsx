@@ -9,6 +9,7 @@ import {
 } from '../../components';
 
 export const MainPage = () => {
+
 	return (
 		<div className="main-page-wrapper">
 			<BackgroundVideo />

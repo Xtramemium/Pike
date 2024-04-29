@@ -22,6 +22,15 @@ button {
 	transition: color 0.5s ease-in-out;
 }
 
+a {
+	color: white;
+	transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+	color: orange;
+}
+
 h2 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 100;

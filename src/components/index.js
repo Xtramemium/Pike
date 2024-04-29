@@ -8,4 +8,3 @@ export * from './find-us/find-us.jsx';
 export * from './slider/slider.jsx';
 export * from '../pages/age-verification/age-verification.jsx';
 export * from './menus-section/menus-section.jsx';
-export * from '../pages/error-page/error-page.jsx';
