@@ -25,6 +25,18 @@ export const SocialMedia = () => {
 							<i className="fa-brands fa-instagram"></i>
 							Instagram
 						</a>
+					</div>{' '}
+					<div>
+						<a
+							href={'https://vk.com/pikebeer'}
+							target="_blank"
+						>
+							<i
+								className="fa fa-vk"
+								aria-hidden="true"
+							></i>
+							Вконтакте
+						</a>
 					</div>
 				</div>
 				<h2>Забронировать столик</h2>
