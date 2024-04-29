@@ -12,6 +12,15 @@
 	box-sizing: border-box;
 }
 
+a {
+	color: white;
+	transition: color 0.3s ease-out;
+}
+
+a:hover {
+	color: orange;
+}
+
 button {
 	padding: 10px;
 	font-size: 20px;
