@@ -1,4 +1,3 @@
-import './gallery.css';
 import {
 	guest_image3,
 	guest_image4,
@@ -6,8 +5,9 @@ import {
 	guest_image7,
 	guest_image8,
 } from '../../assets/assets';
-import { Slider } from '../slider/slider.jsx';
 import { atmosphere } from '../../constans';
+import { Slider } from '../slider/slider.jsx';
+import './gallery.css';
 
 export const Gallery = () => {
 	const images = [

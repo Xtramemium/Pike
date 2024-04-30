@@ -1,16 +1,14 @@
 import {
-	shrimp,
-	wings,
-	tarTar,
-	potatoFry,
-	beefCheeks,
 	Mussels,
 	Toast,
 	barTapImage,
+	beefCheeks,
 	default_image,
+	potatoFry,
+	shrimp,
+	tarTar,
+	wings,
 } from '../../assets/assets';
-import './menus-section.css';
-import { Slider } from '../slider/slider.jsx';
 import {
 	beerCard,
 	beerCardDescription,
@@ -19,6 +17,8 @@ import {
 	menuCardDescription,
 	menuCardLinkPhrase,
 } from '../../constans';
+import { Slider } from '../slider/slider.jsx';
+import './menus-section.css';
 
 export const MenusSection = () => {
 	const food = [

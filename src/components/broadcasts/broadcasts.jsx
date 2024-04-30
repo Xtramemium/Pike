@@ -1,10 +1,10 @@
-import './broadcasts.css';
+import { alt_image, sport_tr } from '../../assets/assets.js';
 import {
 	sportBroadcasts,
 	sportBroadcastsDescription,
 	sportBroadcastsDescription2,
 } from '../../constans';
-import { alt_image, sport_tr } from '../../assets/assets.js';
+import './broadcasts.css';
 
 export const Broadcasts = () => {
 	return (

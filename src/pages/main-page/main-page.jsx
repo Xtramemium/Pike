@@ -1,15 +1,14 @@
-import './main-page.css';
 import {
 	BackgroundVideo,
 	Broadcasts,
 	FindUs,
 	Gallery,
-	SocialMedia,
 	MenusSection,
+	SocialMedia,
 } from '../../components';
+import './main-page.css';
 
 export const MainPage = () => {
-
 	return (
 		<div className="main-page-wrapper">
 			<BackgroundVideo />

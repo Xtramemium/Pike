@@ -1,6 +1,6 @@
-import './age-verification.css';
+import { useEffect, useState } from 'react';
 import { PikeLogo } from '../../assets/assets.js';
-import { useState, useEffect } from 'react';
+import './age-verification.css';
 
 export const AgeVerification = () => {
 	const [isAgeConfirmed, setIsAgeConfirmed] = useState(

@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
-import unknown_img from '../../assets/unknown_img.webp';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-import './slider.css';
 import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import './slider.css';
 
 export const Slider = ({ images = [] }) => (
 	<Swiper
