@@ -16,7 +16,7 @@ export const Slider = ({ images = [] }) => (
 			<SwiperSlide key={image.src}>
 				<img
 					src={image.src}
-					alt={image.alt || unknown_img}
+					alt={image.alt}
 				/>
 			</SwiperSlide>
 		))}

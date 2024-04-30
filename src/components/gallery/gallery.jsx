@@ -19,6 +19,7 @@ export const Gallery = () => {
 	];
 	return (
 		<section className="gallery">
+			<div className="gallery-wrapper"></div>
 			<h2>{atmosphere}</h2>
 			<Slider images={images} />
 		</section>
