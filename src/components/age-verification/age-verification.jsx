@@ -6,7 +6,6 @@ export const AgeVerification = () => {
 	const [isAgeConfirmed, setIsAgeConfirmed] = useState(
 		localStorage.getItem('userAge') === 'true',
 	);
-	console.log(isAgeConfirmed, '1');
 	useEffect(() => {
 		if (!isAgeConfirmed) {
 			document.body.style.overflow = 'hidden';
@@ -15,7 +14,6 @@ export const AgeVerification = () => {
 			document.body.style.overflow = 'auto';
 			document.body.removeEventListener('wheel', preventScroll, { passive: false });
 		}
-		console.log(isAgeConfirmed, '2');
 		return () => {
 			document.body.removeEventListener('wheel', preventScroll, { passive: false });
 		};
