@@ -4,7 +4,7 @@ import './age-verification.css';
 
 export const AgeVerification = () => {
 	const [isAgeConfirmed, setIsAgeConfirmed] = useState(
-		localStorage.getItem('userAge') === 'true',
+		sessionStorage.getItem('userAge') === 'true',
 	);
 	useEffect(() => {
 		if (!isAgeConfirmed) {
@@ -21,7 +21,7 @@ export const AgeVerification = () => {
 
 	const handleAccept = () => {
 		setIsAgeConfirmed(true);
-		localStorage.setItem('userAge', 'true');
+		sessionStorage.setItem('userAge', 'true');
 	};
 
 	const preventScroll = (event) => {
