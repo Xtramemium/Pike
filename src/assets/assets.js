@@ -1,37 +1,36 @@
 import shrimp from './Crevets.jpg';
-import wings from './Wings.jpg';
-import tarTar from './TarTar.jpg';
+import Toast from './Greni.jpg';
+import Mussels from './Midii.jpg';
+import PikeLogo from './Pike_logo.png';
 import potatoFry from './Potato_fry.jpg';
 import beefCheeks from './Sheki.jpg';
-import Mussels from './Midii.jpg';
-import Toast from './Greni.jpg';
-import default_image from './unknown_img.webp';
+import tarTar from './TarTar.jpg';
+import wings from './Wings.jpg';
 import barTapImage from './img1.webp';
-import guest_image3 from './img3.webp';
 import guest_image4 from './img11.webp';
 import guest_image5 from './img12.webp';
 import guest_image7 from './img16.jpg';
 import guest_image8 from './img17.jpg';
-import PikeLogo from './Pike_logo.png';
+import guest_image3 from './img3.webp';
 import sport_tr from './sport_tr.jpg';
-import alt_image from './unknown_img.webp';
+import { default as alt_image, default as default_image } from './unknown_img.webp';
 
 export {
-	shrimp,
-	wings,
-	tarTar,
-	potatoFry,
-	beefCheeks,
 	Mussels,
+	PikeLogo,
 	Toast,
-	default_image,
+	alt_image,
 	barTapImage,
+	beefCheeks,
+	default_image,
 	guest_image3,
 	guest_image4,
 	guest_image5,
 	guest_image7,
 	guest_image8,
-	PikeLogo,
+	potatoFry,
+	shrimp,
 	sport_tr,
-	alt_image,
+	tarTar,
+	wings,
 };

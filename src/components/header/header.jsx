@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './header.css';
+import { wholeMenu } from '../../constans/index.js';
 
 export const Header = () => {
 	const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -40,8 +41,9 @@ export const Header = () => {
 						</button>
 					</li>
 					<li className="mobileMenu">
-						<a onClick={toggleMenu}
-							href="https://drive.google.com/file/d/1fu3OQ2eQgF4Yviy85FLVQOXg0MBqrmJm/view?usp=sharing"
+						<a
+							onClick={toggleMenu}
+							href={wholeMenu}
 							target="_blank"
 						>
 							{' '}
@@ -77,7 +79,7 @@ export const Header = () => {
 					</li>
 					<li className="hideOnMobile">
 						<a
-							href="https://drive.google.com/file/d/1fu3OQ2eQgF4Yviy85FLVQOXg0MBqrmJm/view?usp=sharing"
+							href={wholeMenu}
 							target="_blank"
 						>
 							{' '}

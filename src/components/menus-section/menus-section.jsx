@@ -1,24 +1,26 @@
 import {
-	shrimp,
-	wings,
-	tarTar,
-	potatoFry,
-	beefCheeks,
 	Mussels,
 	Toast,
 	barTapImage,
+	beefCheeks,
 	default_image,
+	potatoFry,
+	shrimp,
+	tarTar,
+	wings,
 } from '../../assets/assets';
-import './menus-section.css';
-import { Slider } from '../slider/slider.jsx';
 import {
 	beerCard,
 	beerCardDescription,
 	beerCardLinkPhrase,
+	menuBar,
 	menuCard,
 	menuCardDescription,
 	menuCardLinkPhrase,
+	menuKitchen,
 } from '../../constans';
+import { Slider } from '../slider/slider.jsx';
+import './menus-section.css';
 
 export const MenusSection = () => {
 	const food = [
@@ -41,7 +43,7 @@ export const MenusSection = () => {
 				/>
 				<p>{beerCardDescription}</p>
 				<a
-					href="https://drive.google.com/file/d/1n3KqO16hJPhkvawQ58j8rOahe0i0NPNf/view?usp=sharing"
+					href={menuBar}
 					target="_blank"
 				>
 					{beerCardLinkPhrase}
@@ -52,7 +54,7 @@ export const MenusSection = () => {
 				<Slider images={food} />
 				<p>{menuCardDescription}</p>
 				<a
-					href="https://drive.google.com/file/d/1IipDeakXvQv8Mgt37k7YZhaKGf1fAvHs/view?usp=sharing"
+					href={menuKitchen}
 					target="_blank"
 				>
 					{menuCardLinkPhrase}

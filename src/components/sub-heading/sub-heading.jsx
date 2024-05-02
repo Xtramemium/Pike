@@ -1,7 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from 'react';
+import {
+	addressLink,
+	phoneNumber,
+	pubName,
+	streetAddress,
+	tagline,
+} from '../../constans';
 import './sub-heading.css';
-import { addressLink, phoneNumber, pubName, streetAddress, tagline } from '../../constans';
 
 export const SubHeading = () => {
 	const [showButton, setShowButton] = useState(false);
