@@ -4,30 +4,30 @@ import './age-verification.css';
 
 export const AgeVerification = () => {
 	const [isAgeConfirmed, setIsAgeConfirmed] = useState(
-		sessionStorage.getItem('userAge') === 'true',
+		Boolean(sessionStorage.getItem('userAge')),
 	);
-	useEffect(() => {
-		if (!isAgeConfirmed) {
-			document.body.style.overflow = 'hidden';
-			document.body.addEventListener('wheel', preventScroll, { passive: false });
-		} else {
-			document.body.style.overflow = 'auto';
-			document.body.removeEventListener('wheel', preventScroll, { passive: false });
-		}
-		return () => {
-			document.body.removeEventListener('wheel', preventScroll, { passive: false });
-		};
-	}, [isAgeConfirmed]);
 
 	const handleAccept = () => {
-		setIsAgeConfirmed(true);
 		sessionStorage.setItem('userAge', 'true');
+		setIsAgeConfirmed(true);
 	};
 
-	const preventScroll = (event) => {
-		event.preventDefault();
-		event.stopPropagation();
-	};
+	useEffect(() => {
+		const handleScroll = (event) => event.preventDefault();
+		const { body } = document;
+
+		if (!isAgeConfirmed) {
+			body.style.overflow = 'hidden';
+			body.addEventListener('wheel', handleScroll, { passive: false });
+		} else {
+			body.style.overflow = 'auto';
+			body.removeEventListener('wheel', handleScroll);
+		}
+
+		return () => {
+			body.removeEventListener('wheel', handleScroll);
+		};
+	}, [isAgeConfirmed]);
 
 	return (
 		<div className={`overlay ${isAgeConfirmed ? 'hidden' : ''}`}>
@@ -42,18 +42,16 @@ export const AgeVerification = () => {
 					<h2>Добро пожаловать</h2>
 					<p>
 						Сайт содержит информацию, не&nbsp;рекомендованную для лиц, не&nbsp;достигших
-						севершеннолетия. Сведения. размещенные на&nbsp;сайте, носят исключительно
+						севершеннолетия. Сведения размещенные на&nbsp;сайте, носят исключительно
 						информативный характер и&nbsp;предназначены только для личного использования
 					</p>
 					{!isAgeConfirmed && (
-						<div className="verification_buttons">
-							<button
-								onClick={handleAccept}
-								className="accept_button"
-							>
-								Мне исполнилось 18 лет
-							</button>
-						</div>
+						<button
+							onClick={handleAccept}
+							className="accept_button"
+						>
+							Мне исполнилось 18 лет
+						</button>
 					)}
 				</div>
 			</div>
