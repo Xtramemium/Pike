@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 * {
@@ -31,12 +25,7 @@ button {
 	transition: color 0.5s ease-in-out;
 }
 
-a {
-	color: white;
-	transition: color 0.3s ease-in-out;
-}
-
-a:hover {
+button:hover {
 	color: orange;
 }
 
@@ -48,10 +37,6 @@ h2 {
 p {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 100;
-}
-
-button:hover {
-	color: orange;
 }
 
 body {

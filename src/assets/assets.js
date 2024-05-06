@@ -14,6 +14,7 @@ import guest_image8 from './img17.jpg';
 import guest_image3 from './img3.webp';
 import sport_tr from './sport_tr.jpg';
 import { default as alt_image, default as default_image } from './unknown_img.webp';
+import guest_image9 from './img18.webp';
 
 export {
 	Mussels,
@@ -33,4 +34,5 @@ export {
 	sport_tr,
 	tarTar,
 	wings,
+	guest_image9,
 };
