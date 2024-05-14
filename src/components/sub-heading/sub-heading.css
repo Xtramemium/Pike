@@ -133,6 +133,10 @@ ul i {
 		right: 6px;
 	}
 
+	.hover-text::before {
+		display: none;
+	}
+
 	.main-page-heading h1 {
 		font-size: 55px;
 	}
