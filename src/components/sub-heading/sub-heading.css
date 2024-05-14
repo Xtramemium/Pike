@@ -50,7 +50,6 @@ a {
 
 h1::selection {
 	color: orange;
-	text-decoration: solid underline orange 1px;
 }
 
 .hover-text::before {
