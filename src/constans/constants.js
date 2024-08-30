@@ -12,9 +12,6 @@ export const menuCardDescription =
 	'Закуски к пиву и полноценные блюда, специально для вас';
 export const menuCardLinkPhrase = 'Посмотреть меню';
 export const sportBroadcasts = 'Спортивные трансляции';
-export const sportBroadcastsDescription =
-	'Это еще один повод собраться большой компанией в "Щуке"';
-export const sportBroadcastsDescription2 = 'и отлично провести время';
 export const howToFindUs = 'Как нас найти';
 export const reviewsAboutUs = 'Отзывы о нас';
 export const reviewsExtra = 'На яндекс картах';

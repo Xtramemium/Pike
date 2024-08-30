@@ -16,7 +16,7 @@ export const Broadcasts = () => {
 					alt={alt_image}
 				/>
 				<p>
-					{sportBroadcastsDescription} <br /> {sportBroadcastsDescription2}
+					{"Это еще один повод собраться большой компанией в \"Щуке\""} <br /> {"и отлично провести время"}
 				</p>
 			</section>
 		</div>
