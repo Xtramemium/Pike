@@ -1,8 +1,6 @@
 import { alt_image, sport_tr } from '../../assets/assets.js';
 import {
 	sportBroadcasts,
-	sportBroadcastsDescription,
-	sportBroadcastsDescription2,
 } from '../../constans';
 import './broadcasts.css';
 
