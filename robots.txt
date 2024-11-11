@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:          # Позволяет доступ ко всему сайту
+Sitemap: https://shukabar.ru/sitemap.xml  # Указывает путь к карте сайта
