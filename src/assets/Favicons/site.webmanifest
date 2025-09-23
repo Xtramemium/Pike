@@ -1,19 +1,54 @@
 {
-    "name": "\u0411\u0430\u0440 \"\u0429\u0443\u043a\u0430\"",
-    "short_name": "\u0411\u0430\u0440 \"\u0429\u0443\u043a\u0430\"",
-    "icons": [
-        {
-            "src": "/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#c59308",
-    "background_color": "#c59308",
-    "display": "standalone"
+  "name": "Бар \"Щука\" - Лучший бар в Люберцах",
+  "short_name": "Бар Щука",
+  "description": "Бар, где каждый чувствует себя как дома. Лучшие сорта пива, спортивные трансляции, уютная атмосфера",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#c59308",
+  "orientation": "portrait-primary",
+  "categories": ["food", "entertainment", "social"],
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "/src/assets/Favicons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/src/assets/Favicons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/src/assets/Favicons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Пивная карта",
+      "short_name": "Пиво",
+      "description": "Посмотреть нашу пивную карту",
+      "url": "/#menu",
+      "icons": [{ "src": "/src/assets/images/beer-icon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Спортивные трансляции",
+      "short_name": "Спорт",
+      "description": "Расписание спортивных трансляций",
+      "url": "/#broadcasts",
+      "icons": [{ "src": "/src/assets/images/sport-icon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Контакты",
+      "short_name": "Адрес",
+      "description": "Как нас найти",
+      "url": "/#contacts",
+      "icons": [{ "src": "/src/assets/images/location-icon.png", "sizes": "96x96" }]
+    }
+  ]
 }

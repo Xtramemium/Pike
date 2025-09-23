@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+				xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+	<!-- Все изображения галереи -->
+	<url>
+		<loc>https://shukabar.ru/</loc>
+
+		<!-- Изображения атмосферы -->
+		<image:image>
+			<image:loc>https://shukabar.ru/src/assets/images/atmosphere1.jpg</image:loc>
+			<image:title>Уютная атмосфера бара Щука</image:title>
+			<image:caption>Наш уютный зал с комфортными местами для гостей</image:caption>
+			<image:geo_location>Люберцы, Московская область</image:geo_location>
+		</image:image>
+
+		<image:image>
+			<image:loc>https://shukabar.ru/src/assets/images/atmosphere2.jpg</image:loc>
+			<image:title>Гости наслаждаются напитками</image:title>
+			<image:caption>Довольные посетители в дружественной атмосфере</image:caption>
+			<image:geo_location>Люберцы, Московская область</image:geo_location>
+		</image:image>
+
+		<image:image>
+			<image:loc>https://shukabar.ru/src/assets/images/comfortable-seating.jpg</image:loc>
+			<image:title>Удобные места для гостей</image:title>
+			<image:caption>Комфортные столики и места для отдыха</image:caption>
+		</image:image>
+
+		<image:image>
+			<image:loc>https://shukabar.ru/src/assets/images/evening-atmosphere.jpg</image:loc>
+			<image:title>Вечерняя атмосфера в баре</image:title>
+			<image:caption>Интерьер бара в вечернем освещении</image:caption>
+		</image:image>
+
+		<image:image>
+			<image:loc>https://shukabar.ru/src/assets/images/food-presentation.jpg</image:loc>
+			<image:title>Красиво поданные блюда</image:title>
+			<image:caption>Наши фирменные блюда и закуски к пиву</image:caption>
+		</image:image>
+
+		<!-- Логотип и брендинг -->
+		<image:image>
+			<image:loc>https://shukabar.ru/src/assets/assets.js</image:loc>
+			<image:title>Логотип бара Щука</image:title>
+			<image:caption>Официальный логотип бара Щука в Люберцах</image:caption>
+		</image:image>
+
+	</url>
+</urlset>

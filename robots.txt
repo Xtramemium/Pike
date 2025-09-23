@@ -1,3 +1,45 @@
+# Robots.txt для shukabar.ru - Бар "Щука"
+# Оптимизировано для максимального SEO
+
 User-agent: *
-Disallow:          # Позволяет доступ ко всему сайту
-Sitemap: https://shukabar.ru/sitemap.xml  # Указывает путь к карте сайта
+Allow: /
+
+# Разрешаем доступ к важным файлам
+Allow: /src/assets/
+Allow: *.css
+Allow: *.js
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.svg
+Allow: *.webp
+
+# Запрещаем индексацию технических файлов
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: *.map
+Disallow: /vite.config.js
+Disallow: /package*.json
+Disallow: /.eslintrc*
+Disallow: /.editorconfig
+Disallow: /.DS_Store
+
+# Специальные правила для поисковых систем
+User-agent: Yandex
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Карты сайта
+Sitemap: https://shukabar.ru/sitemap.xml
+Sitemap: https://shukabar.ru/sitemap-images.xml
+
+# Задержка между запросами
+Crawl-delay: 1
+
+# Host для Яндекса
+Host: shukabar.ru

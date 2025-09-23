@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+				xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+	<!-- Главная страница -->
 	<url>
 		<loc>https://shukabar.ru/</loc>
-		<lastmod>2025-08-09</lastmod>
+		<lastmod>2025-09-23</lastmod>
+		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
+		<image:image>
+			<image:loc>https://shukabar.ru/src/assets/images/hero-bg.jpg</image:loc>
+			<image:title>Бар Щука - главная страница</image:title>
+			<image:caption>Уютный интерьер бара Щука в Люберцах</image:caption>
+		</image:image>
 	</url>
+
+	<!-- Секция атмосферы -->
+	<url>
+		<loc>https://shukabar.ru/#gallery</loc>
+		<lastmod>2025-09-23</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+		<image:image>
+			<image:loc>https://shukabar.ru/src/assets/images/atmosphere1.jpg</image:loc>
+			<image:title>Атмосфера в баре Щука</image:title>
+			<image:caption>Уютная обстановка и довольные гости</image:caption>
+		</image:image>
+	</url>
+
+	<!-- Секция меню -->
+	<url>
+		<loc>https://shukabar.ru/#menu</loc>
+		<lastmod>2025-09-23</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+		<image:image>
+			<image:loc>https://shukabar.ru/src/assets/images/beer-menu.jpg</image:loc>
+			<image:title>Пивная карта бара Щука</image:title>
+			<image:caption>Лучшие сорта пива со всей России</image:caption>
+		</image:image>
+	</url>
+
+	<!-- Спортивные трансляции -->
+	<url>
+		<loc>https://shukabar.ru/#broadcasts</loc>
+		<lastmod>2025-09-23</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<!-- Контакты -->
+	<url>
+		<loc>https://shukabar.ru/#contacts</loc>
+		<lastmod>2025-09-23</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
 </urlset>
